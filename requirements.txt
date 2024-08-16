@@ -1,0 +1,33 @@
+# selenium
+# webdriver-manager
+playwright
+# logzio-python-handler
+# aiohttp
+# fastapi
+# multidict
+# openai
+# pydantic
+# python-dotenv
+# requests
+# tiktoken
+# tqdm
+# urllib3
+# uvicorn==0.25.0
+# httpx
+# boto3
+# claudetools
+# anthropic
+# tokenizers
+# backoff
+# lxml
+# botocore
+# pillow
+# sudo apt install -y wget
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# sudo apt install -y ./google-chrome-stable_current_amd64.deb
+# pip install fastapi
+# pip install selenium
+# pip install -U selenium
+# pip install webdriver-manager
+# pip install playwright
+# python -m playwright install

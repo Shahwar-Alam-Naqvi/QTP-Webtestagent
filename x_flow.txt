@@ -1,0 +1,77 @@
+Agents in QTP :
+    - Web CoPilot (Web Testing Agent)
+    - Reporting (Report Bot)
+    - API Bot (API Test Agent)
+
+==========================================================================
+
+QTP? : The 3 agents above combine and define QTP. 
+QTP? : QTP basically acts as a router. 
+To what ? To these agents.
+
+==========================================================================
+
+QTP-Flow :
+    - Detects the Intent
+    - Starts a headless browser session
+    - Executes (doing operations)
+
+==========================================================================
+
+Focus : Solving Web Test Agent
+Solving? Html approach to Vision approach
+
+==========================================================================
+
+Execution :
+    - To do an execution you need a framework
+    - We use Playwright framework
+    - Inside Playwright framework, you have HTML grab and Locator extraction
+    - But this approach needs to go
+    - Instead using sub-execution of a JS Script Screen Shot with Bounding boxes will be taken
+    - These bounding boxes will be numbered (1,2,3,...)
+    - These will act as locators for us, inside eg. `1` : class: ... , 
+                                                          xpath : ...
+                                                eg. `2` : class: ... , 
+                                                          xpath : ...
+    - We should get 4 things instead for each number : 
+                                                eg. `1` : class: ... , 
+                                                          xpath : ...,
+                                                          x : ...,
+                                                          y : ...
+
+    - x and y, so that I can access interactable elements via coordinates (eg. a tap in the center)
+
+==========================================================================
+
+What Actions ?
+    - Set (Tap on x,y or Send Keys)
+    - Tap (normal)
+    - Wait (normal waiting)
+    - Clear (a Set with data = "")
+    - Verify Text (via Direct match, via Contains those chars match, via Image->VLAM, a bool value obtained)
+    
+
+==========================================================================
+
+Multi-Agent Framework :
+    - Combination of prompts working together
+    - those agents (in a map // whatever in map, is separated to independently use the llm) :
+         - objective (to create objective based on user instruction)
+         - planner (takes objective and plans step for it)
+  _______ explorer 
+ |       - change (has page changed or not) ==> if changed, plan again
+ |       - end (check if you can end it or not, if yes, end it)
+ |       - address (if the step does not work, you address it)
+ |      
+ V
+(rest of the agents are called and used here)
+(so explorer is like an engine, and the agents in map are like moving parts)
+(this is where the objective is tried to be fulfilled)
+
+
+
+
+
+
+
